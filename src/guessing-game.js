@@ -8,7 +8,7 @@ class GuessingGame {
 
     setRange(min, max) {
 		this.left = min;
-		this.right = max;
+		this.right = max - 1;
     }
 
     guess() {
@@ -24,15 +24,11 @@ class GuessingGame {
     }
 
     lower() {
-			//this.middle = Math.round(this.middle);
 			this.right = this.middle;
-			//this.result = this.middle;
 	}
 
     greater() {
-			//this.middle = Math.round(this.middle);
 			this.left = this.middle + 1;
-			//this.result = this.middle;
     }
 }
 
